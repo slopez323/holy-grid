@@ -2,28 +2,50 @@
   height: 600px;
   width: 800px;
   font-size: 3em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "header header header header header header"
+  "nav article-1 article-1 article-1 ad-area ad-area"
+  "nav article-1 article-1 article-1 ad-area ad-area"
+  "nav article-2 article-2 article-2 ad-area ad-area"
+  "nav article-2 article-2 article-2 ad-area ad-area"
+  "footer footer footer footer footer footer";
 }
 
 #header {
   background-color: red;
+  grid-area: header;
+  text-align: center;
 }
 
 #footer {
   background-color: indigo;
+  grid-area: footer;
+  text-align: center;
 }
 
 #article-1 {
   background-color: yellow;
+  grid-area: article-1;
+  text-align: center;
 }
 
 #article-2 {
   background-color: green;
+  grid-area: article-2;
+  text-align: center;
 }
 
 #nav {
   background-color: orange;
+  grid-area: nav;
+  text-align: center;
 }
 
 #ad-area {
   background-color: blue;
+  grid-area: ad-area;
+  text-align: center;
 }
